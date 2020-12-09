@@ -1,0 +1,93 @@
+All services : u will complete the CRUD Ops.
+Services List :
+1. ProductCatlogService
+Operations:
+create
+update
+delete
+getById
+getAll
+getByCategory
+
+Field Spec:
+productId
+productName
+category
+descroption
+expiryDate
+
+Excpetions :
+all field validations
+ProductIdNotFoundException
+ExpiryDateException
+
+
+2. StockService 
+
+Operations :
+create (can we check productid exists or not before adding a new stock for a specific product?)
+
+update
+delete
+getById
+getAll
+
+
+
+Field Spec:
+stockId
+productId
+quantity
+location
+
+Excpetions :
+all field validations
+ProductIdNotFoundException
+StockIdNotFoundException
+InvalidQuantityException
+
+
+
+
+3. PriceService
+Operations :
+create (can we check productid exists or not before adding a new stock for a specific product?)
+update
+delete
+getByProductId
+
+Field:
+priceId
+productId
+priceValue(product price per single unit)
+
+
+Excpetions :
+all field validations
+ProductIdNotFoundException
+InvalidPriceException
+
+
+4. ReviewService
+
+Operations :
+create 
+update
+delete
+getByProductId
+
+Excpetions :
+all field validations
+ProductIdNotFoundException
+
+
+Fields :
+id
+comment
+rating
+productId
+username 
+5. AuthService
+////6. DBService(shared db service) : all MS will use only 1 DB as a Service.  (all model classes in one service ) then can u maintain all relationships ==> Yes
+
+
